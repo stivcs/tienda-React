@@ -1,0 +1,171 @@
+/* Estilos que se aplican al carrito de compras */
+.cart {
+  position: absolute; /* Define la posición absoluta */
+  top: 50%; /* Posiciona el elemento en el 50% de la parte superior */
+  left: 50%; /* Posiciona el elemento en el 50% de la parte izquierda */
+  transform: translate(-50%, -50%); /* Centra el elemento en base a su propio tamaño */
+  width: 600px; /* Define el ancho del elemento */
+  max-height: 600px; /* Define la altura máxima del elemento */
+  background-color: transparent; /* Define el color de fondo como transparente */
+  border: 2px solid #162938; /* Define el borde del elemento */
+  border-radius: 10px; /* Define el radio de los bordes del elemento */
+  backdrop-filter: blur(10px); /* Aplica un efecto de desenfoque al fondo del elemento */
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Agrega una sombra al elemento */
+  display: flex; /* Aplica el modelo de caja flexible */
+  flex-direction: column; /* Define la dirección de los elementos hijos en columna */
+  justify-content: flex-start; /* Alinea los elementos hijos al principio del eje principal */
+  align-items: center; /* Alinea los elementos hijos al centro en el eje transversal */
+  padding: 20px; /* Define el espacio interno del elemento */
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido excede la altura */
+}
+
+/* Estilos que se aplican al título del carrito de compras */
+.cart h1 {
+  font-size: 24px; /* Define el tamaño de fuente del título */
+  font-weight: bold; /* Define el grosor de fuente del título */
+  text-align: center; /* Centra el texto del título */
+  margin-bottom: 10px; /* Define el margen inferior del título */
+  white-space: nowrap; /* Evita que el título se divida en varias líneas */
+  overflow: hidden; /* Oculta el contenido excedente del título */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos cuando el título se desborda */
+  font-family: "Georgia", serif; /* Define la fuente del título */
+  max-width: 100%; /* Define el ancho máximo del título */
+  padding: 0 20px; /* Define el espacio interno izquierdo y derecho del título */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto del título */
+}
+
+/* Estilos que se aplican a los elementos del carrito de compras */
+.cartItems {
+  display: flex; /* Aplica el modelo de caja flexible */
+  flex-direction: column; /* Define la dirección de los elementos hijos en columna */
+  align-items: center; /* Alinea los elementos hijos al centro en el eje transversal */
+  margin-top: 10px; /* Define el margen superior de los elementos */
+  width: 100%; /* Define el ancho de los elementos */
+}
+
+/* Estilos que se aplican a cada elemento del carrito de compras */
+.cartItem {
+  display: flex; /* Aplica el modelo de caja flexible */
+  align-items: center; /* Alinea los elementos hijos al centro en el eje transversal */
+  margin-bottom: 10px; /* Define el margen inferior de los elementos */
+  width: 100%; /* Define el ancho de los elementos */
+}
+
+/* Estilos que se aplican a las imágenes de los productos en el carrito de compras */
+.cartItem img {
+  width: 80px; /* Define el ancho de la imagen */
+  height: 80px; /* Define la altura de la imagen */
+  border-radius: 8px; /* Define el radio de los bordes de la imagen */
+}
+
+/* Estilos que se aplican a la descripción de los productos en el carrito de compras */
+.cartItem .description {
+  margin-left: 10px; /* Define el margen izquierdo de la descripción */
+}
+
+/* Estilos que se aplican a los párrafos en los elementos del carrito de compras */
+.cartItem p {
+  margin-bottom: 5px; /* Define el margen inferior de los párrafos */
+}
+
+/* Estilos que se aplican a los controles de cantidad en los elementos del carrito de compras */
+.cartItem .countHandler {
+  display: flex; /* Aplica el modelo de caja flexible */
+  align-items: center; /* Alinea los elementos hijos al centro en el eje transversal */
+}
+
+/* Estilos que se aplican a los botones de disminuir/aumentar cantidad en los elementos del carrito de compras */
+.cartItem .countHandler button {
+  width: 30px; /* Define el ancho de los botones */
+  height: 30px; /* Define la altura de los botones */
+  background-color: #162938; /* Define el color de fondo de los botones */
+  color: #fff; /* Define el color de texto de los botones */
+  border: none; /* Quita el borde de los botones */
+  border-radius: 50%; /* Define el radio de los bordes de los botones para que sean circulares */
+  font-size: 18px; /* Define el tamaño de fuente de los botones */
+  font-weight: bold; /* Define el grosor de fuente de los botones */
+  cursor: pointer; /* Muestra un cursor al pasar por encima de los botones */
+  transition: background-color 0.3s; /* Agrega una transición al color de fondo de los botones */
+  margin: 0 5px; /* Define el margen horizontal de los botones */
+}
+
+/* Estilos que se aplican a los botones de disminuir/aumentar cantidad en los elementos del carrito de compras al pasar el cursor */
+.cartItem .countHandler button:hover {
+  background-color: #0597c2; /* Define el color de fondo de los botones al pasar el cursor */
+}
+
+/* Estilos que se aplican al campo de entrada de cantidad en los elementos del carrito de compras */
+.cartItem .countHandler input {
+  width: 60px; /* Define el ancho del campo de entrada */
+  height: 30px; /* Define la altura del campo de entrada */
+  text-align: center; /* Centra el texto dentro del campo de entrada */
+  border: 2px solid #162938; /* Define el borde del campo de entrada */
+  border-radius: 8px; /* Define el radio de los bordes del campo de entrada */
+  font-size: 14px; /* Define el tamaño de fuente del campo de entrada */
+  font-weight: bold; /* Define el grosor de fuente del campo de entrada */
+  margin: 0 5px; /* Define el margen horizontal del campo de entrada */
+  background-color: #f1f1f1; /* Define el color de fondo del campo de entrada */
+  transition: border-color 0.3s; /* Agrega una transición al color del borde del campo de entrada */
+  padding: 2px; /* Define el espacio interno del campo de entrada */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto del campo de entrada */
+}
+
+/* Estilos que se aplican al campo de entrada de cantidad en los elementos del carrito de compras al enfocar */
+.cartItem .countHandler input:focus {
+  outline: none; /* Quita el contorno al enfocar el campo de entrada */
+  border-color: #0597c2; /* Define el color del borde del campo de entrada al enfocar */
+}
+
+/* Estilos que se aplican a la sección de pago en el carrito de compras */
+.cart .checkout {
+  margin-top: 10px; /* Define el margen superior de la sección de pago */
+  text-align: center; /* Centra el texto en la sección de pago */
+}
+
+/* Estilos que se aplican a los párrafos en la sección de pago del carrito de compras */
+.cart .checkout p {
+  margin-bottom: 5px; /* Define el margen inferior de los párrafos en la sección de pago */
+}
+
+/* Estilos que se aplican a los botones en la sección de pago del carrito de compras */
+.cart .checkout button {
+  margin-right: 10px; /* Define el margen derecho de los botones en la sección de pago */
+  background-color: #162938; /* Define el color de fondo de los botones en la sección de pago */
+  color: #fff; /* Define el color de texto de los botones en la sección de pago */
+  border: none; /* Quita el borde de los botones en la sección de pago */
+  border-radius: 4px; /* Define el radio de los bordes de los botones en la sección de pago */
+  padding: 5px 10px; /* Define el espacio interno de los botones en la sección de pago */
+  cursor: pointer; /* Muestra un cursor al pasar por encima de los botones en la sección de pago */
+  font-size: 14px; /* Define el tamaño de fuente de los botones en la sección de pago */
+  font-weight: bold; /* Define el grosor de fuente de los botones en la sección de pago */
+  transition: background-color 0.3s; /* Agrega una transición al color de fondo de los botones en la sección de pago */
+}
+
+/* Estilos que se aplican a los botones en la sección de pago del carrito de compras al pasar el cursor */
+.cart .checkout button:hover {
+  background-color: #0597c2; /* Define el color de fondo de los botones en la sección de pago al pasar el cursor */
+}
+
+/* Estilos que se aplican a los títulos en la página */
+h1 {
+  text-align: center; /* Centra los títulos */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos que se aplican al carrito de compras en pantallas pequeñas */
+  .cart {
+    width: 90%; /* Define el ancho del carrito en pantallas pequeñas */
+    height: auto; /* Ajusta la altura del carrito automáticamente en pantallas pequeñas */
+    padding: 10px; /* Define el espacio interno del carrito en pantallas pequeñas */
+  }
+  /* Estilos que se aplican a las imágenes de los productos en el carrito de compras en pantallas pequeñas */
+  .cartItem img {
+    width: 60px; /* Define el ancho de las imágenes de los productos en pantallas pequeñas */
+    height: 60px; /* Define la altura de las imágenes de los productos en pantallas pequeñas */
+  }
+
+    /* Estilos que se aplican a la descripción de los productos en el carrito de compras en pantallas pequeñas */
+  .cartItem .description {
+    margin-left: 5px; /* Define el margen izquierdo de la descripción de los productos en pantallas pequeñas */
+  }
+}

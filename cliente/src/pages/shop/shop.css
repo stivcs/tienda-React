@@ -1,0 +1,120 @@
+.shopTitle {
+    margin-top: 10px; /* Establece un margen superior de 100 píxeles */
+    text-align: center; /* Centra el texto horizontalmente dentro de su contenedor */
+    font-size: 1rem; /* Establece el tamaño de fuente en 40 píxeles */
+  }
+  
+  .shop {
+    position: relative;
+    align-items: center; /* Centra verticalmente los elementos dentro de su contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos dentro de su contenedor */
+    text-align: center; /* Centra el texto horizontalmente dentro de su contenedor */
+    --ancho: 200px; /* Define una variable personalizada llamada "--ancho" con un valor de 200 píxeles */
+    --alto: 220px; /* Define una variable personalizada llamada "--alto" con un valor de 220 píxeles */
+    margin: 0; /* Elimina el margen exterior del elemento */
+    width: 80%;
+    left: 10%;
+  }
+  
+  .shop h1 {
+    margin-top: 0; /* Elimina el margen superior del encabezado h1 */
+    color: white; /* Establece el color del texto en blanco */
+  }
+  
+  #img {
+    width: var(--ancho); /* Establece el ancho de la imagen usando la variable personalizada "--ancho" */
+    height: var(--alto); /* Establece la altura de la imagen usando la variable personalizada "--alto" */
+  }
+  
+  .products {
+    display: flex; /* Establece el contenedor de productos como un flex container */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro de su contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos dentro de su contenedor */
+  }
+  
+  
+  .product {
+    width: 300px; /* Establece el ancho del producto en 250 píxeles */
+    min-height: 550px; /* Establece la altura del producto usando la variable personalizada "--alt" */
+    max-height: max-content;
+    display: block; /* Establece el producto como un bloque */
+    justify-content: center; /* Centra horizontalmente los elementos dentro de su contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro de su contenedor */
+    background-color: rgba(165, 26, 230, 0.527); /* Establece el color de fondo con transparencia */
+    color: rgb(255, 255, 255); /* Establece el color del texto en blanco */
+    margin: 10px; /* Establece un margen exterior de 10 píxeles alrededor del producto */
+    padding: 2px; /* Establece un espacio interno de 2 píxeles dentro del producto */
+    border-radius: 10px; /* Establece un borde redondeado de 10 píxeles */
+    border-color: white; /* Establece el color del borde en blanco */
+    border-style: solid; /* Establece el estilo del borde como sólido */
+    box-shadow: 0px 0px 1px 3px rgb(1, 120, 255); /* Agrega una sombra alrededor del producto */
+    transition: transform 0.5s ease; /* Aplica una transición suave de 0.5 segundos al transformar el producto */
+  }
+  
+  @keyframes slide {
+    /* Define una animación llamada "slide" */
+    0% {
+      margin-left: 0%; /* Establece el margen izquierdo en 0% al comienzo de la animación */
+    }
+    33% {
+      margin-left: 0%; /* Mantiene el margen izquierdo en 0% durante el 33% de la animación */
+    }
+    35% {
+      margin-left: -100%; /* Desplaza el margen izquierdo a -100% en el 35% de la animación */
+    }
+    66% {
+      margin-left: -100%; /* Mantiene el margen izquierdo en -100% durante el 66% de la animación */
+    }
+    69% {
+      margin-left: -200%; /* Desplaza el margen izquierdo a -200% en el 69% de la animación */
+    }
+    99% {
+      margin-left: -200%; /* Mantiene el margen izquierdo en -200% durante el 99% de la animación */
+    }
+  }
+  
+  .slide-var {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    margin: 250px; /* Establece un margen exterior de 250 píxeles en todas las direcciones */
+    margin: 0; /* Anula el margen exterior previo y establece el margen exterior en 0 */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+  }
+  
+  .slide-var ul {
+    display: flex; /* Establece la lista como un flex container */
+    padding: 0; /* Elimina el relleno interno de la lista */
+    width: 300%; /* Establece el ancho de la lista al 300% del contenedor */
+    animation: slide 12s infinite alternate ease-in-out; /* Aplica la animación "slide" a la lista */
+  }
+  
+  .slide-var li {
+    border-radius: 10px; /* Establece un borde redondeado de 10 píxeles en los elementos de la lista */
+    list-style: none; /* Elimina los marcadores de lista en los elementos */
+    width: 100%; /* Establece el ancho de los elementos de la lista al 100% del contenedor */
+  }
+  
+  .slide-var img {
+    border-radius: 10px; /* Establece un borde redondeado de 10 píxeles en las imágenes */
+    width: 100%; /* Establece el ancho de las imágenes al 100% del contenedor */
+  }
+  
+  .product .description {
+    /* word-wrap: break-word; Permite que las palabras se rompan y se ajusten al ancho del contenedor */
+    text-align: center; /* Centra el texto horizontalmente dentro de su contenedor */
+    /* white-space: nowrap;
+    overflow: hidden; */
+    text-overflow: ellipsis;
+  }
+  
+  .product .descripcion {
+    font-size: 15px; /* Establece el tamaño de fuente en 15 píxeles */
+  }
+  
+  .product:hover {
+    transform: scale(1.5); /* Escala el producto al 150% en el estado de desplazamiento */
+    transform-origin: 50% 50%; /* Establece el punto de origen de la transformación en el centro del producto */
+    transform: scale(1.05); /* Escala el producto al 105% en el estado de desplazamiento */
+  }
+  
+  

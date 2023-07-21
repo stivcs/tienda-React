@@ -1,0 +1,79 @@
+/* Estilos que se aplican al formulario de inicio de sesión */
+.login-form {
+    position: absolute; /* Posición absoluta para centrar el formulario */
+    top: 50%; /* Posiciona el elemento en el 50% de la parte superior */
+    left: 50%; /* Posiciona el elemento en el 50% de la parte izquierda */
+    transform: translate(-50%, -50%); /* Centra el elemento en base a su propio tamaño */
+    max-width: 400px; /* Define el ancho máximo del formulario */
+    margin: 0 auto; /* Centra horizontalmente el formulario */
+    padding: 20px; /* Espacio interno del formulario */
+    background-color: rgba(241, 241, 241, 0.8); /* Color de fondo con transparencia */
+    border-radius: 8px; /* Radio de los bordes del formulario */
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Sombra del formulario */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque del fondo */
+    font-family: "Arial", sans-serif; /* Fuente del texto */
+  }
+  
+  /* Estilos que se aplican al título del formulario de inicio de sesión */
+  .login-form h2 {
+    text-align: center; /* Centra el texto */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Grosor de fuente */
+    margin-bottom: 20px; /* Margen inferior del título */
+  }
+  
+  /* Estilos que se aplican al formulario dentro del formulario de inicio de sesión */
+  .login-form form {
+    display: flex; /* Aplica el modelo de caja flexible */
+    flex-direction: column; /* Dirección de los elementos hijos en columna */
+  }
+  
+  /* Estilos que se aplican a los campos de entrada en el formulario de inicio de sesión */
+  .login-form input {
+    height: 40px; /* Altura de los campos de entrada */
+    margin-bottom: 10px; /* Margen inferior de los campos de entrada */
+    padding: 0 10px; /* Espacio interno de los campos de entrada */
+    border: 2px solid #162938; /* Borde de los campos de entrada */
+    border-radius: 8px; /* Radio de los bordes de los campos de entrada */
+    font-size: 16px; /* Tamaño de fuente de los campos de entrada */
+  }
+  
+  /* Estilos que se aplican al botón de envío en el formulario de inicio de sesión */
+  .login-form input[type="submit"] {
+    background-color: #162938; /* Color de fondo del botón de envío */
+    color: #fff; /* Color de texto del botón de envío */
+    border: none; /* Quita el borde del botón de envío */
+    border-radius: 4px; /* Radio de los bordes del botón de envío */
+    height: 40px; /* Altura del botón de envío */
+    font-size: 16px; /* Tamaño de fuente del botón de envío */
+    font-weight: bold; /* Grosor de fuente del botón de envío */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón de envío */
+    transition: background-color 0.3s; /* Transición al color de fondo del botón de envío */
+  }
+  
+  /* Estilos que se aplican al botón de envío en el formulario de inicio de sesión al pasar el cursor */
+  .login-form input[type="submit"]:hover {
+    background-color: #0597c2; /* Color de fondo del botón de envío al pasar el cursor */
+  }
+  
+  /* Estilos que se aplican al botón de registro en el formulario de inicio de sesión */
+  .login-form .btn-register {
+    text-align: center; /* Centra el texto */
+    font-size: 14px; /* Tamaño de fuente */
+    color: #162938; /* Color de texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón de registro */
+    transition: color 0.3s; /* Transición al color de texto del botón de registro */
+  }
+  
+  /* Estilos que se aplican al botón de registro en el formulario de inicio de sesión al pasar el cursor */
+  .login-form .btn-register:hover {
+    color: #0597c2; /* Color de texto del botón de registro al pasar el cursor */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* Estilos que se aplican al formulario de inicio de sesión en pantallas pequeñas */
+    .login-form {
+      max-width: 90%; /* Ancho máximo del formulario en pantallas pequeñas */
+    }
+  }
+  

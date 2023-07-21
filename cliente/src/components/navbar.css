@@ -1,0 +1,32 @@
+.navbar {
+  width: 100%; /* Establece el ancho del navbar al 100% del contenedor padre */
+  height: 80px; /* Establece la altura del navbar en 80 píxeles */
+  background-color: rgba(0, 0, 0, 0.979); /* Establece el color de fondo del navbar en negro con opacidad */
+  background-image: url("https://img2.wallspic.com/crops/1/9/8/4/6/164891/164891-ambiente-luz-naturaleza-morado-galaxia-7680x2160.jpg"); /* Establece una imagen de fondo para el navbar */
+  background-size: cover; /* Escala la imagen de fondo para que cubra completamente el área del navbar */
+  background-position: center center; /* Centra la imagen de fondo en el navbar */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  display: flex; /* Establece el navbar como un flex container */
+  justify-content: flex-end; /* Alinea los elementos del navbar hacia el extremo derecho */
+  align-items: center; /* Centra verticalmente los elementos dentro del navbar */
+  z-index: 20; /* Establece el orden de apilamiento del navbar sobre otros elementos */
+  border: 0; /* Elimina el borde del navbar */
+  border-bottom: 2px; /* Agrega un borde inferior de 2 píxeles al navbar */
+  border-style: solid; /* Establece el estilo del borde como sólido */
+  border-color: white; /* Establece el color del borde en blanco */
+  box-shadow: 0px 0px 30px 3px rgb(1, 120, 255); /* Agrega una sombra alrededor del navbar */
+}
+
+.links {
+  margin-right: 50px; /* Establece un margen derecho de 50 píxeles en el contenedor de los links */
+  display: flex; /* Establece el contenedor de los links como un flex container */
+  align-items: center; /* Centra verticalmente los elementos dentro del contenedor de los links */
+}
+
+.links a {
+  text-decoration: none; /* Elimina la decoración de subrayado en los enlaces */
+  color: rgb(255, 255, 255); /* Establece el color del texto en blanco */
+  margin-left: 20px; /* Establece un margen izquierdo de 20 píxeles entre los enlaces */
+  font-size: 25px; /* Establece el tamaño de fuente en 25 píxeles */
+  border-radius: 50%; /* Establece un borde redondeado en forma de círculo en los enlaces */
+}

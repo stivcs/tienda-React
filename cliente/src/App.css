@@ -1,0 +1,17 @@
+
+.App {/*se le da un tamaño a la pagina*/
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {/*se quita el padding y margin que vienen por defecto en la pagina*/
+  padding: 0;
+  margin: 0;
+  background-image:url('https://static.vecteezy.com/system/resources/previews/007/745/387/original/vintage-seamless-pattern-fleur-de-lis-free-vector.jpg');
+  /* background-size: cover; */
+  /* background-position: center center; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment:fixed; */
+}

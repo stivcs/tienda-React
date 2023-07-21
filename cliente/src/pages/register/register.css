@@ -1,0 +1,70 @@
+  /* Estilos que se aplican al formulario de registro */
+  .register-form {
+    backdrop-filter: blur(20px); /* Agrega un efecto de desenfoque al fondo del formulario */
+    position: absolute; /* Establece la posición absoluta del formulario */
+    top: 50%; /* Posiciona el formulario en el 50% de la parte superior */
+    left: 50%; /* Posiciona el formulario en el 50% de la parte izquierda */
+    transform: translate(-50%, -50%); /* Centra el formulario en base a su propio tamaño */
+    width: 400px; /* Establece el ancho del formulario */
+    margin: 0 auto; /* Centra horizontalmente el formulario */
+    padding: 20px; /* Establece el espacio interno del formulario */
+    background-color: transparent; /* Establece el color de fondo del formulario como transparente */
+    border-radius: 8px; /* Establece el radio de los bordes del formulario */
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Agrega una sombra al formulario */
+    backdrop-filter: blur(5px); /* Agrega un efecto de desenfoque al fondo del formulario */
+    font-family: "Arial", sans-serif; /* Establece la fuente del texto del formulario */
+    box-shadow: 0 0 30px black; /* Agrega una sombra adicional al formulario */
+  }
+  
+  /* Estilos que se aplican al título del formulario de registro */
+  .register-form h2 {
+    text-align: center; /* Centra el texto del título */
+    font-size: 24px; /* Establece el tamaño de fuente del título */
+    font-weight: bold; /* Establece el grosor de fuente del título */
+    margin-bottom: 20px; /* Establece el margen inferior del título */
+  }
+  
+  /* Estilos que se aplican al formulario dentro del formulario de registro */
+  .register-form form {
+    display: flex; /* Aplica el modelo de caja flexible al formulario */
+    flex-direction: column; /* Establece la dirección de los elementos hijos en columna */
+  }
+  
+  /* Estilos que se aplican a los campos de entrada en el formulario de registro */
+  .register-form input {
+    height: 50px; /* Establece la altura de los campos de entrada */
+    margin-bottom: 10px; /* Establece el margen inferior de los campos de entrada */
+    padding: 0 10px; /* Establece el espacio interno de los campos de entrada */
+    border: none; /* Elimina el borde de los campos de entrada */
+    font-size: 16px; /* Establece el tamaño de fuente de los campos de entrada */
+    outline: none; /* Elimina el contorno al hacer clic en los campos de entrada */
+    border-bottom: 2px solid #162938; /* Establece un borde inferior de 2px sólido de color #162938 */
+    background: transparent; /* Establece el fondo de los campos de entrada como transparente */
+    font-size: 1.2em; /* Establece el tamaño de fuente de los campos de entrada */
+  }
+  
+  /* Estilos que se aplican al botón de envío en el formulario de registro */
+  .register-form input[type="submit"] {
+    background-color: #162938; /* Establece el color de fondo del botón de envío */
+    color: #fff; /* Establece el color de texto del botón de envío */
+    border: none; /* Elimina el borde del botón de envío */
+    border-radius: 4px; /* Establece el radio de los bordes del botón de envío */
+    height: 40px; /* Establece la altura del botón de envío */
+    font-size: 16px; /* Establece el tamaño de fuente del botón de envío */
+    font-weight: bold; /* Establece el grosor de fuente del botón de envío */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón de envío */
+    transition: background-color 0.3s; /* Establece una transición al color de fondo del botón de envío */
+  }
+  
+  /* Estilos que se aplican al botón de envío en el formulario de registro al pasar el cursor */
+  .register-form input[type="submit"]:hover {
+    background-color: #0597c2; /* Establece el nuevo color de fondo del botón de envío al pasar el cursor */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* Estilos que se aplican al formulario de registro en pantallas pequeñas */
+    .register-form {
+      max-width: 90%; /* Establece el ancho máximo del formulario en pantallas pequeñas */
+    }
+  }
+  
